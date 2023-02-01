@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/217dc9b060.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <i class="fa-solid fa-toggle-on toggler" onclick="toggleBackground()"></i>
+    <div class="main-text">
+        <h2>Generate a <br> <span class="inline">random password</span></h2>
+        <p>Never use an insecure password again.</p>
+        <button class="main-btn" onclick="generatePassword()">Generate Passwords</button>
+        <hr>
+        <div class="inputs">
+            <input type="text" class="form-el1" max="15">
+            <input type="text" class="form-el2" max="15">
+            <i class="fa-solid fa-copy copy" onclick="copyPassword()" title="Copy Password"></i>
+        </div>
+        <div class="buttons">
+            <button class="symbols" onclick="getSymbolsOnly()">Symbols Only</button>
+            <button class="number" onclick="getNumberOnly()">Numbers Only</button>
+            <button class="alphabet" onclick="getAlphabetOnly()">Alphabets Only</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
